@@ -1,14 +1,10 @@
-{% set name = "bcpandas" %}
-{% set version = "0.1.2" %}
-{% set creator = "yehoshuadimarsky" %}
-
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: bcpandas
+  version: "0.1.4"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f451bb7cc0b35f8266d3f09f73005271897313293b94132f003236e796d6ac9b
+  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.4.tar.gz
+  sha256: af9328f85550bcf80606df33e357825d0a4d14a64feabf37a48731861d0256bf
 
 build:
   noarch: python
@@ -21,16 +17,16 @@ requirements:
     - pip
     - setuptools
   
-  run:
-    - python >=3.6
-    - pandas >=0.22
+  run: 
+    - python>=3.6 
+    - pandas>=0.22 
   
 test:
   imports:
     - bcpandas
 
 about:
-  home: https://pypi.org/project/{{ name }}
+  home: https://pypi.org/project/bcpandas
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -38,8 +34,8 @@ about:
   description: |
     High-level wrapper around BCP for high performance data transfers between pandas and SQL Server. 
     No knowledge of BCP required!!
-  doc_url: https://github.com/{{ creator }}/{{ name }}
-  dev_url: https://github.com/{{ creator }}/{{ name }}
+  doc_url: https://github.com/yehoshuadimarsky/bcpandas
+  dev_url: https://github.com/yehoshuadimarsky/bcpandas
 
 extra:
   recipe-maintainers:
