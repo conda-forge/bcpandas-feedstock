@@ -1,10 +1,10 @@
 package:
   name: bcpandas
-  version: "0.1.4"
+  version: "0.1.5"
 
 source:
-  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.4.tar.gz
-  sha256: af9328f85550bcf80606df33e357825d0a4d14a64feabf37a48731861d0256bf
+  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.5.tar.gz
+  sha256: da3b5b439723d4584fbed8b79004ee56b2afec9579fce159a5ad57217da2bfe0
 
 build:
   noarch: python
