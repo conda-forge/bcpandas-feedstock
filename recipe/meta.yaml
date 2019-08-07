@@ -1,10 +1,10 @@
 package:
   name: bcpandas
-  version: "0.1.5"
+  version: "0.1.6"
 
 source:
-  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.5.tar.gz
-  sha256: da3b5b439723d4584fbed8b79004ee56b2afec9579fce159a5ad57217da2bfe0
+  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.6.tar.gz
+  sha256: a67a8e6737a1f54c5bf9a6df8e6f9d2dea2f18cac873a35106bb0a7c2a2bb4e6
 
 build:
   noarch: python
@@ -13,7 +13,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python>=3.6
     - pip
     - setuptools
   
