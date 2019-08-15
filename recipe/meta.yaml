@@ -27,7 +27,7 @@ test:
     - pyodbc 
     - sqlalchemy 
   source_files:
-    - /tests/*
+    - ./tests/*
   commands:
     - cd %RECIPE_DIR%/tests & pytest -vv .  # [win]
     - printenv && cd $RECIPE_DIR && ls && cd $SRC_DIR/tests & pytest -vv .  # [not win]
