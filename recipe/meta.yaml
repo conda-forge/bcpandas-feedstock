@@ -29,8 +29,11 @@ test:
   source_files:
     - ./tests/*
   commands:
-    - cd %RECIPE_DIR%/tests & pytest -vv .  # [win]
-    - printenv && cd $RECIPE_DIR && ls && cd $SRC_DIR/tests & pytest -vv .  # [not win]
+    - cd %SRC_DIR%/tests & pytest -vv .  # [win]
+    - |  # [not win]
+      if [ -x "$(command -v docker)" ]
+      then
+          cd $SRC_DIR/tests & pytest -vv .  
 
 about:
   home: https://pypi.org/project/bcpandas
