@@ -27,8 +27,8 @@ test:
     - pyodbc 
     - sqlalchemy 
   commands:
-    - cd %RECIPE_DIR%/tests && pytest -vv . # [win]
-    - cd $RECIPE_DIR/tests && pytest -vv . # [not win]
+    - cd %RECIPE_DIR%/tests && pytest -vv .  # [win]
+    - cd $RECIPE_DIR/tests && pytest -vv .  # [not win]
 
 about:
   home: https://pypi.org/project/bcpandas
