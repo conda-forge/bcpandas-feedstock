@@ -30,8 +30,8 @@ test:
     - ./tests/*
   commands:
     - cd %SRC_DIR%/tests & pytest -vv .  # [win]
-    - |  # [not win]
-      if [ -x "$(command -v docker)" ]
+    - | 
+      if [ -x "$(command -v docker)" ]  # [not win]
       then
           cd $SRC_DIR/tests & pytest -vv .  
 
