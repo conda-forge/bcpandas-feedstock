@@ -21,9 +21,9 @@ requirements:
     - python>=3.6 
     - pandas>=0.22 
   
-  test:
-    imports:
-      - bcpandas
+test:
+  imports:
+    - bcpandas
 
 about:
   home: https://pypi.org/project/bcpandas
