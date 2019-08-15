@@ -28,7 +28,7 @@ test:
     - sqlalchemy 
   commands:
     - cd %RECIPE_DIR%/tests & pytest -vv .  # [win]
-    - printenv && cd $SRC_DIR/tests & pytest -vv .  # [not win]
+    - printenv && cd $RECIPE_DIR && ls && cd $SRC_DIR/tests & pytest -vv .  # [not win]
 
 about:
   home: https://pypi.org/project/bcpandas
