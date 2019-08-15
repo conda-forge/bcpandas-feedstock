@@ -21,19 +21,9 @@ requirements:
     - python>=3.6 
     - pandas>=0.22 
   
-test:
-  requires: 
-    - pytest 
-    - pyodbc 
-    - sqlalchemy 
-  source_files:
-    - ./tests/*
-  commands:
-    - cd %SRC_DIR%/tests & pytest -vv .  # [win]
-    - | 
-      if [ -x "$(command -v docker)" ]  # [not win]
-      then
-          cd $SRC_DIR/tests & pytest -vv .  
+  test:
+    imports:
+      - bcpandas
 
 about:
   home: https://pypi.org/project/bcpandas
