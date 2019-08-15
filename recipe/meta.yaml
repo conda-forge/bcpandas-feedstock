@@ -22,8 +22,12 @@ requirements:
     - pandas>=0.22 
   
 test:
-  imports:
-    - bcpandas
+  requires: 
+    - pytest 
+    - pyodbc 
+    - sqlalchemy 
+  commands:
+    - cd %RECIPE_DIR%/tests && pytest -vv . 
 
 about:
   home: https://pypi.org/project/bcpandas
