@@ -1,10 +1,10 @@
 package:
   name: bcpandas
-  version: "0.1.7"
+  version: "0.1.8"
 
 source:
-  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.7.tar.gz
-  sha256: 449a1138a7b030fafa353de107902711e6ec8c320babe33d6ba99da6bfffc1f5
+  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.1.8.tar.gz
+  sha256: 5ebe827024158908c41d6bba3df0bda56b8a796601da4abcc97ff7550dae02ce
 
 build:
   noarch: python
@@ -22,8 +22,14 @@ requirements:
     - pandas>=0.22 
   
 test:
-  imports:
-    - bcpandas
+  requires: 
+    - pytest 
+    - pyodbc 
+    - sqlalchemy 
+  source_files:
+    - ./tests/*
+  commands:
+    - cd %SRC_DIR%/tests & pytest -vv .  # [win]
 
 about:
   home: https://pypi.org/project/bcpandas
