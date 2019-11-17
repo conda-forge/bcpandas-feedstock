@@ -1,6 +1,9 @@
+{% set name = "bcpandas" %}
+{% set version = "0.2.2" %}
+
 package:
-  name: bcpandas
-  version: "0.2.2"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
