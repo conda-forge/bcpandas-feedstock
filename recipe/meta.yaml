@@ -27,13 +27,8 @@ requirements:
     - sqlalchemy >=1.1.4 
   
 test:
-  requires: 
-    - pytest 
-    - pytest-benchmark 
-  source_files:
-    - ./tests/*
-  commands:
-    - cd %SRC_DIR%/tests & pytest -vv .  # [win]
+  imports:
+    - bcpandas
 
 about:
   home: https://pypi.org/project/bcpandas
