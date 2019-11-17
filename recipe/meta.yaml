@@ -1,10 +1,10 @@
 package:
   name: bcpandas
-  version: "0.2.0"
+  version: "0.2.2"
 
 source:
-  url: https://github.com/yehoshuadimarsky/bcpandas/archive/0.2.0.tar.gz
-  sha256: 70b40b8b9b4f6a48077181dd88984653dc7bb553b223fa8edac92d639faa9a6e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9c09b9295dc43fa60e4a5f7bc183077ed17cb69b95938941d3522b115064ff8a
 
 build:
   noarch: python
