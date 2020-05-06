@@ -1,5 +1,5 @@
 {% set name = "bcpandas" %}
-{% set version = "0.3.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2bda3a81ed502a64746af2bd7fdb32e5bce784987d82a634657377f7a0fab1a0
+  sha256: 9fb8eae66d6b48452fb9f04b1088ece1c152beb74cd20c9256e2680e52a0366d
 
 build:
   noarch: python
