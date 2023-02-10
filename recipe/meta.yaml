@@ -1,5 +1,5 @@
 {% set name = "bcpandas" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ef2e38731215f448136a2431521f9ead34f54af7a03aa7b22cadd923e968471d
+  sha256: bd0ead2eb6ebbf4f3d1c6e329ce7dbd28bdf1c5644426b7c498ec3fd6f39ac63
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python >=3.8.1
     - pandas >=0.19
     - pyodbc
-    - sqlalchemy >=1.0
+    - sqlalchemy >=1.0,<2
 
 test:
   requires:
