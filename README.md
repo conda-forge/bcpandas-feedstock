@@ -1,11 +1,11 @@
-About bcpandas
-==============
+About bcpandas-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bcpandas-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/bcpandas
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bcpandas-feedstock/blob/main/LICENSE.txt)
 
 Summary: Wrapper around BCP to transfer data between pandas and SQL Server.
 
