@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ab0e8cba5ffdedf6ae3561f4b4e29702bf4821ca3d5d7770e82df87e671093d6
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8.1
+    - python {{ python_min }}
     - pip
     - setuptools
     - poetry >=1.3.2
   run:
-    - python >=3.8.1
+    - python >={{ python_min }}
     - pandas >=1.5
     - pyodbc
     - sqlalchemy >=1.4
@@ -29,6 +29,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - bcpandas
 
